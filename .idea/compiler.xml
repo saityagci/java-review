@@ -15,9 +15,8 @@
         <module name="streams" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
+    <bytecodeTargetLevel target="11">
       <module name="generic" target="11" />
-      <module name="generics" target="8" />
       <module name="lambda" target="11" />
       <module name="oop-review" target="11" />
       <module name="streams" target="11" />
