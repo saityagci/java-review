@@ -38,9 +38,10 @@ public class ArrayListReview {
         System.out.println("Lambda...........................................");
         students.forEach(student -> System.out.println(student));
         //5. Sorting Elements in List
-        System.out.println("Printing with sorted List by comp..............................");
+        System.out.println("Printing with sorted List by id..............................");
         Collections.sort(students,new sortById());
         System.out.println(students);
+        System.out.println("Printing with sorted List by name..............................");
         Collections.sort(students, new sortByName());
         System.out.println(students);
 
