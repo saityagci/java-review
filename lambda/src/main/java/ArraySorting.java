@@ -6,6 +6,8 @@ public class ArraySorting {
         BubbleSort bs=new BubbleSort();
         as.sort(bs);
         as.sort(qs);
+        MyLambda myLambda=()-> System.out.println("Sorting the array");
+        Sorting myLambda2=()-> System.out.println("Sorting the array");
 
 
     }
@@ -13,4 +15,7 @@ public class ArraySorting {
     private void sort(Sorting sorting) {
        sorting.sort();
     }
+}
+interface MyLambda{
+    void print();
 }
