@@ -8,7 +8,7 @@ import lombok.*;
 //@AllArgsConstructor
 @Builder
 @Data
-public class Orange {
+public class Apple {
     private int weight;
     private Color color;
 }
