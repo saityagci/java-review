@@ -17,6 +17,10 @@ public class AppleTest {
        AppleFormatter simpleFormatter= apple -> "An apple of "+ apple.getWeight()+" g";
        prettyPrintApple(inventory,simpleFormatter);
        prettyPrintApple(inventory,apple ->"An apple of "+ apple.getWeight()+" g"+" and "+apple.getColor()+ " color." );
+        System.out.println("********************************************");
+       AppleFormatter fancyFormatter= apple -> {String characteristic=apple.getWeight()>150 ?"Heavy ":" Light";
+    return "A"+ characteristic+ " "+ apple.getColor()+ " apple ";};
+       prettyPrintApple(inventory,fancyFormatter);
     }
     private static void prettyPrintApple(List<Apple>inventory,AppleFormatter appleFormatter){
         for (Apple apple : inventory) {
