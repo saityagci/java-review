@@ -1,5 +1,6 @@
 package doubleColonOperator;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -17,6 +18,15 @@ public class CarTest {
         Function<Integer,Car> f2=Car::new ;
         Car toyota=f2.apply(2011);
         System.out.println(toyota.getModel());
+        // Two Argument
+
+        BiFunction<String,Integer,Car> b1= (make,model)->new Car(make,model);
+        Car honda= b1.apply("Honda",2000);
+        System.out.println(honda.getModel()+ " "+honda.getMake());
+
+        BiFunction<String,Integer,Car> b2= Car::new;
+        Car nissan= b2.apply("Nissan",2022);
+        System.out.println(nissan.getModel()+" "+ nissan.getMake());
 
     }
 }
