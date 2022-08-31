@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         List<Student> studentList= new ArrayList<>();
         studentList.add(new Student("Max",101));
         studentList.add(new Student("Adam",102));
@@ -29,6 +29,7 @@ public class GenericTest {
         MyUtils<Student> obj1=new MyUtils<>();
         System.out.println(obj1.getLastItem(studentList).getName());
         obj1.getLastItem(studentList);
+        System.out.println(obj1.getLastItemName(studentList));
 
         MyUtils<Teacher> obj2= new MyUtils<>();
         System.out.println( obj2.getLastItem(teacherList).getName());
