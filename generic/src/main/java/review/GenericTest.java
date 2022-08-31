@@ -10,12 +10,22 @@ public class GenericTest {
         studentList.add(new Student("Adam",102));
         studentList.add(new Student("Angela",103));
         studentList.add(new Student("Malek",104));
+        studentList.add(new Student("Mel",105));
 
         List<Teacher> teacherList= new ArrayList<>();
-        studentList.add(new Student("Joe",201));
-        studentList.add(new Student("Alicia",201));
-        studentList.add(new Student("Mark",201));
+        teacherList.add(new Teacher("Joe",201));
+        teacherList.add(new Teacher("Alicia",202));
+        teacherList.add(new Teacher("Mark",203));
+        printInfo(studentList);
 
 
+    }
+    // write a method takes list of student, print each student and total count
+    public static void printInfo (List<Student> students){
+        for (Student student : students) {
+            System.out.println(student);
+            
+        }
+        System.out.println("Total count= "+students.size());
     }
 }
