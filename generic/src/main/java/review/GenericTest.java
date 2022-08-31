@@ -19,11 +19,20 @@ public class GenericTest {
         teacherList.add(new Teacher("Mark",203));
         teacherList.add(new Teacher("Ozzy",204));
 
-        printInfo(studentList);
-        infoPrint(teacherList);
-        infoPrint(studentList);
-        System.out.println(getLastItem(studentList).getName());
-        System.out.println(getLastItem(teacherList).getName());
+//        printInfo(studentList);
+//        infoPrint(teacherList);
+//        infoPrint(studentList);
+//        System.out.println(getLastItem(studentList).getName());
+//        System.out.println(getLastItem(teacherList).getName());
+
+
+        MyUtils<Student> obj1=new MyUtils<>();
+        System.out.println(obj1.getLastItem(studentList).getName());
+        obj1.getLastItem(studentList);
+
+        MyUtils<Teacher> obj2= new MyUtils<>();
+        System.out.println( obj2.getLastItem(teacherList).getName());
+       obj2.infoPrint(teacherList);
 
 
     }
