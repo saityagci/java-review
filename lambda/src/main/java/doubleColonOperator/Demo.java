@@ -25,6 +25,8 @@ public class Demo {
         System.out.println(v2.apply(new MyClass(),2));
         Function<Integer,Double> nn=new MyClass()::method;
         System.out.println(nn.apply(4));
+        BiFunction<MyClass,Integer,Double>aa=MyClass::method;
+        BiFunction<String,String,String>bb=String::concat;
 
 
     }
