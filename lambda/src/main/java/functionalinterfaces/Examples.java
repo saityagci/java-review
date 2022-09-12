@@ -28,6 +28,15 @@ public class Examples {
         //**************SUPPLIER**************
         Supplier<Double> randomValue= ()-> Math.random();
         System.out.println( randomValue.get());
+        Predicate <Integer>pred=(p)->p%2==0?true:false;
+        System.out.println(pred.test(30));
+
+        BiConsumer<Integer,Integer> bn= (x,y)-> System.out.println(x+y);
+        bn.accept(5,12);
+        BiConsumer<Integer,String> bm= (x,y)-> System.out.println(x+y);
+        bm.accept(2," Apple");
+
+
 
     }
 }
