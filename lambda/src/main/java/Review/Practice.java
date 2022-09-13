@@ -1,6 +1,8 @@
 package Review;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.function.*;
 
@@ -55,6 +57,27 @@ public class Practice {
         //no parameter and one return
         Supplier<String>value=()->"Some return";
         System.out.println(value.get());
+
+        //create a lambda expression that takes 2 int array and combine to list of integer
+        BiFunction<int[],int[],List<Integer>> combineArray=(arr1,arr2)->{
+            List<Integer>arrList=new ArrayList<>();
+            for (int each : arr1) {
+                arrList.add(each);
+
+            }
+            for (int each : arr2) {
+                arrList.add(each);
+
+            }
+            return arrList;
+
+        };
+        int[] array1={1,2,3,4,5};
+        int [] array2={6,7,8,9};
+        combineArray.apply(array1,array2);
+        List<Integer> integerList=combineArray.apply(array1,array2);
+        System.out.println(integerList);
+
 
     }
 }
