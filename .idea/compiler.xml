@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="USE_RELEASE_OPTION" value="false" />
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/Stream/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -10,15 +13,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lambda" />
         <module name="oop-review" />
+        <module name="Stream" />
         <module name="generics" />
         <module name="generic" />
         <module name="streams" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
-      <module name="generic" target="11" />
-      <module name="lambda" target="11" />
-      <module name="oop-review" target="11" />
       <module name="streams" target="11" />
     </bytecodeTargetLevel>
   </component>
