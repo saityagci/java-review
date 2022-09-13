@@ -1,4 +1,4 @@
-package task2;
+package Review;
 
 public class FastCar implements CarPredicate{
     @Override
