@@ -19,5 +19,11 @@ public class Reducing {
         System.out.println("Min: "+min);
         System.out.println("Max: "+max);
         System.out.println("Sum: "+sum);
+
+        //Task
+        int dishCount=DishData.getAll().stream()
+                .map(d->1)
+                .reduce(0,(a,b)->a+b);
+        System.out.println(dishCount);
     }
 }
