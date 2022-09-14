@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <option name="USE_RELEASE_OPTION" value="false" />
     <excludeFromCompile>
-      <directory url="file://$PROJECT_DIR$/Stream/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/stream/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
@@ -13,8 +13,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lambda" />
         <module name="oop-review" />
-        <module name="Stream" />
         <module name="generics" />
+        <module name="stream" />
         <module name="generic" />
         <module name="streams" />
       </profile>
